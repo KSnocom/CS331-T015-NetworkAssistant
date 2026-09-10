@@ -1,0 +1,13 @@
+bandwidth:
+  minimum_mbps: 1
+  maximum_mbps: 1000
+  default_mbps: 100
+
+  allowed_target_ranges:
+    - "172.30.50.0/24"
+
+  protected_hosts:
+    - "172.30.50.1"
+    - "172.30.50.10"
+
+  interface: "eth0"

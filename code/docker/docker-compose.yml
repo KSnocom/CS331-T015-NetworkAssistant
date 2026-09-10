@@ -1,0 +1,45 @@
+name: intelligent-network-assistant
+services:
+  admin:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: intelligent-network-assistant:lab
+    cap_add:
+    - NET_ADMIN
+    - NET_RAW
+    networks:
+      lab:
+        ipv4_address: 172.30.50.10
+    command:
+    - sleep
+    - infinity
+    volumes:
+    - ../logs:/app/logs:Z
+  client-a:
+    image: intelligent-network-assistant:lab
+    cap_add:
+    - NET_RAW
+    networks:
+      lab:
+        ipv4_address: 172.30.50.20
+    command:
+    - iperf3
+    - -s
+  client-b:
+    image: intelligent-network-assistant:lab
+    cap_add:
+    - NET_RAW
+    networks:
+      lab:
+        ipv4_address: 172.30.50.30
+    command:
+    - iperf3
+    - -s
+networks:
+  lab:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+      - subnet: 172.30.50.0/24

@@ -1,0 +1,28 @@
+firewall:
+  allowed_protocols:
+    - tcp
+    - udp
+    - icmp
+
+  allowed_directions:
+    - INPUT
+    - OUTPUT
+    - FORWARD
+
+  allowed_target_ranges:
+    - "172.30.50.0/24"
+
+  protected_ports:
+    - 22
+    - 443
+
+  protected_hosts:
+    - "172.30.50.1"
+    - "172.30.50.10"
+
+  forbidden_source_ranges:
+    - "127.0.0.0/8"
+    - "::1/128"
+
+  max_rules: 100
+  require_validation: true

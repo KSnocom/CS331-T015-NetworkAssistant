@@ -1,0 +1,123 @@
+{
+  "timestamp": "2026-09-08T17:02:52.221262+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Only the ten approved tools are exposed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Initial inspection succeeds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No existing assistant firewall rules",
+      "passed": true,
+      "detail": "The suite requires an empty managed-firewall baseline."
+    },
+    {
+      "name": "Protected port rejected",
+      "passed": true,
+      "detail": "Rejected requests must execute no commands."
+    },
+    {
+      "name": "Command-like IP rejected",
+      "passed": true,
+      "detail": "Rejected requests must execute no commands."
+    },
+    {
+      "name": "Outside-lab target rejected",
+      "passed": true,
+      "detail": "Rejected requests must execute no commands."
+    },
+    {
+      "name": "MCP schema rejects a Boolean port",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Initial block succeeds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Repeated blocks make no additional changes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Block removed before concurrency test",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Concurrent requests produce one change and seven no-ops",
+      "passed": true,
+      "detail": "Batch duration: 48.93 ms"
+    },
+    {
+      "name": "Exactly one port-23 rule exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Concurrent-test rule removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Repeated apply/remove cycles succeed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Unreachable probe returns a bounded failure",
+      "passed": true,
+      "detail": "Elapsed: 3104.46 ms; project budget: 12000 ms"
+    },
+    {
+      "name": "Final cleanup request succeeds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Final managed firewall state is empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every application response has one matching final audit record",
+      "passed": true,
+      "detail": "Checked 79 application request IDs."
+    }
+  ],
+  "latency": {
+    "repeat_no_change_ms": {
+      "samples": 20,
+      "median_ms": 7.801,
+      "p95_ms": 8.649,
+      "maximum_ms": 9.411
+    },
+    "block_change_ms": {
+      "samples": 20,
+      "median_ms": 11.571,
+      "p95_ms": 12.066,
+      "maximum_ms": 12.624
+    },
+    "allow_change_ms": {
+      "samples": 20,
+      "median_ms": 29.423,
+      "p95_ms": 33.438,
+      "maximum_ms": 34.246
+    }
+  },
+  "failures": [],
+  "scope": "Live MCP requests, including policy, kernel commands, and audit. Excludes server startup and LLM/Ollama processing.",
+  "limitations": [
+    "Latency is measured, not graded against an approved requirement.",
+    "Schema-level rejection is captured in client evidence, not the application audit, because the tool body is not invoked.",
+    "This run does not test maximum rule capacity or crash recovery."
+  ]
+}

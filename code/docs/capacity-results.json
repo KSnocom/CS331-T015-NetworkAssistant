@@ -1,0 +1,446 @@
+{
+  "status": "PASS",
+  "configured_max_rules": 100,
+  "checks": [
+    {
+      "name": "Managed firewall starts empty",
+      "passed": true
+    },
+    {
+      "name": "Configured capacity reached",
+      "passed": true
+    },
+    {
+      "name": "One rule beyond capacity is rejected",
+      "passed": true
+    },
+    {
+      "name": "Capacity rejection executes no insertion",
+      "passed": true
+    },
+    {
+      "name": "Rejected addition leaves rule count unchanged",
+      "passed": true
+    },
+    {
+      "name": "Removal is permitted at full capacity",
+      "passed": true
+    },
+    {
+      "name": "Freed capacity permits another rule",
+      "passed": true
+    },
+    {
+      "name": "Rule count returns to the configured limit",
+      "passed": true
+    },
+    {
+      "name": "Cleanup leaves no managed firewall rules",
+      "passed": true
+    }
+  ],
+  "measurements": [
+    {
+      "managed_rules_after_add": 1,
+      "request_ms": 12.072
+    },
+    {
+      "managed_rules_after_add": 2,
+      "request_ms": 12.088
+    },
+    {
+      "managed_rules_after_add": 3,
+      "request_ms": 11.865
+    },
+    {
+      "managed_rules_after_add": 4,
+      "request_ms": 11.702
+    },
+    {
+      "managed_rules_after_add": 5,
+      "request_ms": 12.343
+    },
+    {
+      "managed_rules_after_add": 6,
+      "request_ms": 12.378
+    },
+    {
+      "managed_rules_after_add": 7,
+      "request_ms": 12.397
+    },
+    {
+      "managed_rules_after_add": 8,
+      "request_ms": 12.815
+    },
+    {
+      "managed_rules_after_add": 9,
+      "request_ms": 12.052
+    },
+    {
+      "managed_rules_after_add": 10,
+      "request_ms": 11.883
+    },
+    {
+      "managed_rules_after_add": 11,
+      "request_ms": 12.856
+    },
+    {
+      "managed_rules_after_add": 12,
+      "request_ms": 12.428
+    },
+    {
+      "managed_rules_after_add": 13,
+      "request_ms": 12.576
+    },
+    {
+      "managed_rules_after_add": 14,
+      "request_ms": 12.941
+    },
+    {
+      "managed_rules_after_add": 15,
+      "request_ms": 13.129
+    },
+    {
+      "managed_rules_after_add": 16,
+      "request_ms": 13.198
+    },
+    {
+      "managed_rules_after_add": 17,
+      "request_ms": 13.534
+    },
+    {
+      "managed_rules_after_add": 18,
+      "request_ms": 13.759
+    },
+    {
+      "managed_rules_after_add": 19,
+      "request_ms": 13.711
+    },
+    {
+      "managed_rules_after_add": 20,
+      "request_ms": 13.302
+    },
+    {
+      "managed_rules_after_add": 21,
+      "request_ms": 13.776
+    },
+    {
+      "managed_rules_after_add": 22,
+      "request_ms": 14.414
+    },
+    {
+      "managed_rules_after_add": 23,
+      "request_ms": 13.636
+    },
+    {
+      "managed_rules_after_add": 24,
+      "request_ms": 13.379
+    },
+    {
+      "managed_rules_after_add": 25,
+      "request_ms": 13.193
+    },
+    {
+      "managed_rules_after_add": 26,
+      "request_ms": 13.154
+    },
+    {
+      "managed_rules_after_add": 27,
+      "request_ms": 13.252
+    },
+    {
+      "managed_rules_after_add": 28,
+      "request_ms": 13.255
+    },
+    {
+      "managed_rules_after_add": 29,
+      "request_ms": 13.438
+    },
+    {
+      "managed_rules_after_add": 30,
+      "request_ms": 13.307
+    },
+    {
+      "managed_rules_after_add": 31,
+      "request_ms": 13.789
+    },
+    {
+      "managed_rules_after_add": 32,
+      "request_ms": 13.977
+    },
+    {
+      "managed_rules_after_add": 33,
+      "request_ms": 14.354
+    },
+    {
+      "managed_rules_after_add": 34,
+      "request_ms": 14.937
+    },
+    {
+      "managed_rules_after_add": 35,
+      "request_ms": 14.497
+    },
+    {
+      "managed_rules_after_add": 36,
+      "request_ms": 14.311
+    },
+    {
+      "managed_rules_after_add": 37,
+      "request_ms": 14.234
+    },
+    {
+      "managed_rules_after_add": 38,
+      "request_ms": 14.173
+    },
+    {
+      "managed_rules_after_add": 39,
+      "request_ms": 14.258
+    },
+    {
+      "managed_rules_after_add": 40,
+      "request_ms": 13.922
+    },
+    {
+      "managed_rules_after_add": 41,
+      "request_ms": 14.016
+    },
+    {
+      "managed_rules_after_add": 42,
+      "request_ms": 14.122
+    },
+    {
+      "managed_rules_after_add": 43,
+      "request_ms": 14.302
+    },
+    {
+      "managed_rules_after_add": 44,
+      "request_ms": 14.342
+    },
+    {
+      "managed_rules_after_add": 45,
+      "request_ms": 14.699
+    },
+    {
+      "managed_rules_after_add": 46,
+      "request_ms": 15.712
+    },
+    {
+      "managed_rules_after_add": 47,
+      "request_ms": 16.015
+    },
+    {
+      "managed_rules_after_add": 48,
+      "request_ms": 15.042
+    },
+    {
+      "managed_rules_after_add": 49,
+      "request_ms": 14.841
+    },
+    {
+      "managed_rules_after_add": 50,
+      "request_ms": 15.077
+    },
+    {
+      "managed_rules_after_add": 51,
+      "request_ms": 14.813
+    },
+    {
+      "managed_rules_after_add": 52,
+      "request_ms": 15.272
+    },
+    {
+      "managed_rules_after_add": 53,
+      "request_ms": 16.672
+    },
+    {
+      "managed_rules_after_add": 54,
+      "request_ms": 15.018
+    },
+    {
+      "managed_rules_after_add": 55,
+      "request_ms": 14.926
+    },
+    {
+      "managed_rules_after_add": 56,
+      "request_ms": 15.639
+    },
+    {
+      "managed_rules_after_add": 57,
+      "request_ms": 14.595
+    },
+    {
+      "managed_rules_after_add": 58,
+      "request_ms": 14.493
+    },
+    {
+      "managed_rules_after_add": 59,
+      "request_ms": 15.561
+    },
+    {
+      "managed_rules_after_add": 60,
+      "request_ms": 15.162
+    },
+    {
+      "managed_rules_after_add": 61,
+      "request_ms": 15.241
+    },
+    {
+      "managed_rules_after_add": 62,
+      "request_ms": 15.923
+    },
+    {
+      "managed_rules_after_add": 63,
+      "request_ms": 14.732
+    },
+    {
+      "managed_rules_after_add": 64,
+      "request_ms": 15.365
+    },
+    {
+      "managed_rules_after_add": 65,
+      "request_ms": 16.394
+    },
+    {
+      "managed_rules_after_add": 66,
+      "request_ms": 15.147
+    },
+    {
+      "managed_rules_after_add": 67,
+      "request_ms": 15.725
+    },
+    {
+      "managed_rules_after_add": 68,
+      "request_ms": 15.132
+    },
+    {
+      "managed_rules_after_add": 69,
+      "request_ms": 15.824
+    },
+    {
+      "managed_rules_after_add": 70,
+      "request_ms": 16.123
+    },
+    {
+      "managed_rules_after_add": 71,
+      "request_ms": 15.192
+    },
+    {
+      "managed_rules_after_add": 72,
+      "request_ms": 17.627
+    },
+    {
+      "managed_rules_after_add": 73,
+      "request_ms": 16.075
+    },
+    {
+      "managed_rules_after_add": 74,
+      "request_ms": 16.088
+    },
+    {
+      "managed_rules_after_add": 75,
+      "request_ms": 16.481
+    },
+    {
+      "managed_rules_after_add": 76,
+      "request_ms": 16.127
+    },
+    {
+      "managed_rules_after_add": 77,
+      "request_ms": 17.858
+    },
+    {
+      "managed_rules_after_add": 78,
+      "request_ms": 16.444
+    },
+    {
+      "managed_rules_after_add": 79,
+      "request_ms": 16.757
+    },
+    {
+      "managed_rules_after_add": 80,
+      "request_ms": 16.719
+    },
+    {
+      "managed_rules_after_add": 81,
+      "request_ms": 17.102
+    },
+    {
+      "managed_rules_after_add": 82,
+      "request_ms": 14.987
+    },
+    {
+      "managed_rules_after_add": 83,
+      "request_ms": 16.503
+    },
+    {
+      "managed_rules_after_add": 84,
+      "request_ms": 16.452
+    },
+    {
+      "managed_rules_after_add": 85,
+      "request_ms": 16.623
+    },
+    {
+      "managed_rules_after_add": 86,
+      "request_ms": 16.328
+    },
+    {
+      "managed_rules_after_add": 87,
+      "request_ms": 15.57
+    },
+    {
+      "managed_rules_after_add": 88,
+      "request_ms": 16.619
+    },
+    {
+      "managed_rules_after_add": 89,
+      "request_ms": 16.124
+    },
+    {
+      "managed_rules_after_add": 90,
+      "request_ms": 16.943
+    },
+    {
+      "managed_rules_after_add": 91,
+      "request_ms": 17.723
+    },
+    {
+      "managed_rules_after_add": 92,
+      "request_ms": 17.222
+    },
+    {
+      "managed_rules_after_add": 93,
+      "request_ms": 17.269
+    },
+    {
+      "managed_rules_after_add": 94,
+      "request_ms": 17.458
+    },
+    {
+      "managed_rules_after_add": 95,
+      "request_ms": 17.828
+    },
+    {
+      "managed_rules_after_add": 96,
+      "request_ms": 17.694
+    },
+    {
+      "managed_rules_after_add": 97,
+      "request_ms": 17.248
+    },
+    {
+      "managed_rules_after_add": 98,
+      "request_ms": 17.748
+    },
+    {
+      "managed_rules_after_add": 99,
+      "request_ms": 17.096
+    },
+    {
+      "managed_rules_after_add": 100,
+      "request_ms": 18.402
+    }
+  ],
+  "failures": [],
+  "measurement_note": "One timing sample per occupancy level; these are exploratory measurements, not a statistically established scaling result."
+}

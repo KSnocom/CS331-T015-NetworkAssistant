@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-09-07T23:20:54.835636+00:00",
+  "mode": "live",
+  "command": [
+    "/usr/sbin/iptables",
+    "-w",
+    "5",
+    "-L",
+    "-n",
+    "-v",
+    "--line-numbers"
+  ],
+  "status": "success",
+  "executed": true,
+  "return_code": 0,
+  "stdout": "Chain INPUT (policy ACCEPT 5324K packets, 277M bytes)\nnum   pkts bytes target     prot opt in     out     source               destination         \n\nChain FORWARD (policy ACCEPT 0 packets, 0 bytes)\nnum   pkts bytes target     prot opt in     out     source               destination         \n\nChain OUTPUT (policy ACCEPT 0 packets, 0 bytes)\nnum   pkts bytes target     prot opt in     out     source               destination         \n",
+  "stderr": "",
+  "duration_seconds": 0.002816
+}
